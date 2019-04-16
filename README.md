@@ -1,6 +1,8 @@
 # myCat
 围住神经猫游戏
 
+demo在线演示地址：https://chen1215.github.io/myCat/
+
 ### 游戏设置
 灰色圆形表示可走的地图，蓝色圆形表示神经猫，黄色圆形表示设置的障碍物。
 ### 游戏说明
@@ -13,7 +15,7 @@
 - SoundJS：音频播放引擎
 - PreloadJS：网站资源预加载，提供加载的进度回调，以及资源获取
 ### EaselJS的使用方法
-- stage类
+- Stage类
 >用来实例化一个舞台，是对canvas元素的包装，一个canvas元素对应一个stage。我们要把最终所有的元素都添加到stage上，才能显示出来。
 ```
 var stage=new createjs.Stage("canvas");//创建舞台
@@ -25,7 +27,7 @@ var gameView=new createjs.Container();//绘制的游戏页面视图
 stage.addChild(gameView);//把视图添加到舞台上
 
 ```
--Shape类
+- Shape类
 >用来绘制图形
 ```
 var circle = new createjs.Shape();//创建一个Shape对象
