@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="easeljs.min.js"></script>
+    <style>
+        #myCat{
+            text-align: center;
+            font-family: Arial;
+        }
+        header{
+            display:block;
+            margin:20px;
+        }
+        header #newgame{
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            background: green;
+            color: white;
+        }
+        header #newgame:hover{
+            background: mediumseagreen;
+        }
+        header p{
+            margin: 20px auto;
+            font-size: 25px;
+        }
+        #gameView{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="myCat">
+        <header>
+            <h1>围住神经猫</h1>
+            <a href="javascript:newgame()" id="newgame">再来一局</a>
+            <p>步数: <span id="steps">0</span></p>
+        </header>
+        <canvas width="520px" height="520px" id="gameView"></canvas>
+        <script src="Circle.js"></script>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
